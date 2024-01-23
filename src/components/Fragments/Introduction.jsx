@@ -16,6 +16,7 @@ export default function () {
       <Paragraph size="text-sm">Download tiktok videos, Musically videos on any device you want: mobile, PC or tablet.</Paragraph>
       <Paragraph size="text-sm">Download using your browser: We want to make things easier for you. No need to download or install any software.</Paragraph>
       <SubHeading>GET STARTED</SubHeading>
+      <Paragraph size="text-1xl">Select the download option below</Paragraph>
     </div>
   )
 }
