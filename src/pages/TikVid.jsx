@@ -14,7 +14,11 @@ export default function () {
       document.querySelector(".loadny").classList.toggle("hidden");
       return urls
     })
-      .catch(_ => alert(_));
+      .catch(_ => {
+        document.querySelector(".submiter").classList.toggle("hidden");
+        document.querySelector(".loadny").classList.toggle("hidden");
+        alert("Something Error");
+      });
   };
 
   const HandleSubmit = async(e) => {
