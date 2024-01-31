@@ -14,7 +14,8 @@
     "react-dom": "^18.2.0",
     "axios": "^1.6.5",
     "cheerio": "^1.0.0-rc.12",
-    "util": "^0.12.5"
+    "util": "^0.12.5",
+    "node-html-parser": "^6.1.12"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
