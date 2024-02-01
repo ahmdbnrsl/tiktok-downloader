@@ -5,12 +5,14 @@ import MainPages from './pages/MainPages.jsx'
 import Video from './pages/TikVid.jsx'
 import Image from './pages/TikImg.jsx'
 import Audio from './pages/TikAud.jsx'
+import Incorrect from './pages/incorrectPath.jsx'
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainPages/>
+    element: <MainPages/>,
+    errorElement: <Incorrect/>
   },
   {
     path: "/video",

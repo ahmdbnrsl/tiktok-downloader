@@ -8,7 +8,7 @@ export default function() {
   return (
     <div className="w-full flex flex-col align-middle items-center">
       <Title>Down Tik</Title>
-      <SubTitle>tiktok video, image, audio downloader</SubTitle>
+      <SubTitle>tiktok media downloader</SubTitle>
       <SubHeading>TIKTOK VIDEO DOWNLOADER</SubHeading>
       <Paragraph size="text-sm">This is a feature for downloading media in the form of TikTok videos, It's quite easy to use, you just need to paste the URL of the TikTok video that you copied, then press the download button and wait for the results.</Paragraph>
     </div>

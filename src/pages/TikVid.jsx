@@ -4,6 +4,7 @@ import Footer from '.././components/Layouts/Footer.jsx';
 import Form from '.././components/Layouts/Form.jsx';
 import Button from '.././components/Elements/Submit.jsx';
 import Loading from '.././components/Elements/Loading.jsx';
+import Back from '.././components/Elements/Back.jsx'
 
 export default function () {
   const getValue = () => document.querySelector(".input-urls").value;
@@ -17,7 +18,8 @@ export default function () {
       .catch(_ => {
         document.querySelector(".submiter").classList.toggle("hidden");
         document.querySelector(".loadny").classList.toggle("hidden");
-        alert("Something Error");
+        window.navigator.vibrate(500)
+        setTimeout(() => window.location.reload(false), 500);
       });
   };
 
@@ -34,6 +36,7 @@ export default function () {
     <div className="w-full min-h-screen flex flex-col align-middle bg-slate-900 p-4 selection:bg-sky-400 selection:text-white">
       <Title/>
       <Form submit={HandleSubmit} opsional="form-vid" optional="vid" load={<Button isdisable={true} type="button" opt="loadny flex justify-center hidden"><Loading/></Button>} opt="submiter" opsio="input-urls"/>
+      <Back/>
       <Footer/>
     </div>
   )

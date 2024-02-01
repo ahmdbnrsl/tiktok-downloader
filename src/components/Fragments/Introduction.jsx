@@ -8,7 +8,7 @@ export default function () {
   return (
     <div className="w-full flex flex-col align-middle items-center">
       <Title>Down Tik</Title>
-      <SubTitle>tiktok video, image, audio downloader</SubTitle>
+      <SubTitle>tiktok media downloader</SubTitle>
       <Paragraph size="text-1xl" lineHeight="leading-8">Presenting <Strong>Down Tik</Strong>, What is <Strong>Down Tik</Strong>? <Strong>Down Tik</Strong> is a tiktok downloader platform, with <Strong>Down Tik</Strong> you can download media from tiktok without watermark. <Strong>Down Tik</Strong> is free and unlimited acces for everyone. Why <Strong>Down Tik</Strong>? Because <Strong>Down Tik</Strong> is simple, free and accessible.</Paragraph>
       <SubHeading>MAIN FEATURES</SubHeading>
       <Paragraph size="text-sm">Fast Speed... We made SnapTik very fast, There is almost no delay.</Paragraph>
