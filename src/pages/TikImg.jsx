@@ -44,6 +44,7 @@ export default function () {
       taut.forEach(e => {
         thisResults += `<a href="${e}" target="_blank" class="w-100"><img class="w-100 border border-1 border-cyan-300 rounded" src="${e}" alt="result"/></a>`
       });
+      document.querySelector(".ress").classList.add("mb-8")
       document.querySelector(".ress").innerHTML = thisResults;
       document.querySelector(".input-urls").value = "";
     } 
@@ -53,7 +54,7 @@ export default function () {
       <Title/>
       <Form submit={HandleSubmit} opsional="form-vid" optional="vid" load={<Button isdisable={true} type="button" opt="loadny flex justify-center hidden"><Loading/></Button>} opt="submiter" opsio="input-urls"/>
       <div className="results flex justify-center w-full">
-       <div className="ress w-full max-w-4xl grid mb-8 px-8 gap-6"
+       <div className="ress w-full max-w-4xl grid px-8 gap-6"
          style={{
            gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
          }}></div>
