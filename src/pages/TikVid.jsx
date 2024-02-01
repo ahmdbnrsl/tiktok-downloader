@@ -30,7 +30,21 @@ export default function () {
     document.querySelector(".submiter").classList.toggle("hidden");
     document.querySelector(".loadny").classList.toggle("hidden");
     const taut = await fetchData(fetchUrl)
-    const a = document.createElement('a');a.href = taut;a.target = "_blank";a.click();document.querySelector(".input-urls").value = "";
+    
+    const a = document.createElement('a');
+    if(typeof(taut) === "object") {
+      a.href = "/image"
+      document.querySelector(".input-urls").value = "media is image!";
+      window.navigator.vibrate(100);
+      setTimeout(() => {
+        a.click();
+      }, 1500);
+    } else {
+      a.href = taut;
+      a.target = "_blank";
+      a.click();
+      document.querySelector(".input-urls").value = "";
+    } 
   };
   return (
     <div className="w-full min-h-screen flex flex-col align-middle bg-slate-900 p-4 selection:bg-sky-400 selection:text-white">
