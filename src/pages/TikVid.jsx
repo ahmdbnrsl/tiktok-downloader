@@ -34,7 +34,7 @@ export default function () {
     const a = document.createElement('a');
     if(typeof(taut) === "object") {
       a.href = "/image"
-      document.querySelector(".input-urls").value = "media is image!";
+      document.querySelector(".input-urls").value = "media is image! please use tiktok slide photo downloader";
       window.navigator.vibrate(100);
       setTimeout(() => {
         a.click();

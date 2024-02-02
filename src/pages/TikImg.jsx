@@ -34,7 +34,7 @@ export default function () {
     const a = document.createElement('a');
     if(typeof(taut) === "string") {
       a.href = "/video"
-      document.querySelector(".input-urls").value = "media is video!";
+      document.querySelector(".input-urls").value = "media is video! please use tiktok video downloader";
       window.navigator.vibrate(100);
       setTimeout(() => {
         a.click();
