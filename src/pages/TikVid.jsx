@@ -43,9 +43,14 @@ export default function () {
         a.click();
       }, 1500);
     } else {
-      a.href = taut;
-      a.target = "_blank";
-      a.click();
+      document.querySelector(".ress").classList.add("mb-8")
+      document.querySelector(".ress").innerHTML = `<div class="flex flex-col items-center justify-center border border-1 border-cyan-300 rounded w-full">
+        <video class="w-full rounded" controls>
+          <source src="${taut}" type="video/mp4"/>
+        </video>
+      </div>
+      <a href="${taut}" target="_blank" class="text-center text-black w-full rounded bg-sky-400 px-5 pt-2 pb-1 text-1xl font-semibold font-mono mt-5">DOWNLOAD</a>`;
+      
       document.querySelector(".input-urls").value = "";
     } 
   };
@@ -53,6 +58,9 @@ export default function () {
     <div className="w-full min-h-screen flex flex-col align-middle bg-slate-900 p-4 selection:bg-sky-400 selection:text-white">
       <Title/>
       <Form submit={HandleSubmit} opsional="form-vid" optional="vid" load={<Button isdisable={true} type="button" opt="loadny flex justify-center hidden"><Loading/></Button>} opt="submiter" opsio="input-urls"/>
+      <div className="results flex justify-center w-full">
+       <div className="ress w-full max-w-2xl flex flex-col px-8 items-center"></div>
+      </div>
       <Back/>
       <Footer/>
     </div>

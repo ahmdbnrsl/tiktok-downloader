@@ -7,6 +7,7 @@ import Image from './pages/TikImg.jsx'
 import Audio from './pages/TikAud.jsx'
 import Incorrect from './pages/incorrectPath.jsx'
 import './index.css'
+import './controls.css'
 
 const router = createBrowserRouter([
   {
