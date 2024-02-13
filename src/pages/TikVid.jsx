@@ -29,7 +29,7 @@ export default function () {
   const HandleSubmit = async(e) => {
     e.preventDefault();
     let tautan = getValue();
-    const fetchUrl = `https://downtik.netlify.app/dl?url=${tautan}`;
+    const fetchUrl = `https://tikdldtapi.vercel.app/dl?url=${tautan}`;
     document.querySelector(".submiter").classList.toggle("hidden");
     document.querySelector(".loadny").classList.toggle("hidden");
     const taut = await fetchData(fetchUrl);

@@ -26,12 +26,11 @@ export default function () {
   const HandleSubmit = async(e) => {
     e.preventDefault();
     let tautan = getValue()
-    const fetchUrl = `https://downtik.netlify.app/dl?url=${tautan}`;
+    const fetchUrl = `https://tikdldtapi.vercel.app/dl?url=${tautan}`;
     document.querySelector(".submiter").classList.toggle("hidden");
     document.querySelector(".loadny").classList.toggle("hidden");
-    const taut = await fetchData(fetchUrl)
-    //const a = document.createElement('a');a.href = taut;a.target = "_blank";a.click();
-    document.querySelector(".ress").classList.add("mb-8")
+    const taut = await fetchData(fetchUrl);
+    document.querySelector(".ress").classList.add("mb-8");
     document.querySelector(".ress").innerHTML = `<div class="flex flex-col items-center justify-center w-full">
         <audio class="w-full rounded :media-controls-panel-bg-cyan-300" controls>
           <source src="${taut}" type="audio/mp3"/>
